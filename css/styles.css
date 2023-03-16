@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --dark-grey: #2b2b2b;
+    --light-grey:lightgray;
+    --header-font-weight:700;
+  }
+body{
+    background-color: var(--light-grey);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  margin: 10px; /* Adds a 10px outer spacing to all sides*/
+  border: 1px; /* Attributes describe: thickness, type, color*/
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: var(--header-font-weight);
+}
+  
+h2 {
+    font-size: 24px;
+    font-weight: var(--header-font-weight);
+}
+  
+h3 {
+    font-size: 18px;
+    font-weight: var(--header-font-weight);
+}
+a {
+    color: var(--primary-color);
+  }
+a:visited {
+    /* visited link */
+    color: var(--primary-color);
+}
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}  
+a:active {
+    /* selected link */
+    color: var(--primary-color);
+}
+
+button,
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--primary-color);
+    color: var(--light-grey);
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+}
+button:hover, 
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+.button__secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-grey);
+}
+.navigation__logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+  .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  .page-header__item {
+    flex: 0 1 200px;
+  }
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+  .navigation-list {
+    list-style-type: none;
+  }
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+   }
+   /* end grid fallback */
+   @supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+  }
+  .grid__item {
+    background-color: darkgray;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+  .grid__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+}
+}
+@media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .about {
+  text-align: center;
+  }
+  .enjoy {
+    list-style: none;
+  }
+
