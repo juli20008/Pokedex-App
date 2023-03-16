@@ -15,3 +15,12 @@ pokemonList[2]={
     height:20,
     types:['grass', 'poison']
 };
+
+for (let i = 0; i < pokemonList.length; i++) {
+         if (pokemonList[i].height > 10) {
+                 document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow! That's big!`+ '<br>'+ '<br>');
+         } else {
+            document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height})`+ '<br>'+ '<br>');
+         } 
+  }
+
