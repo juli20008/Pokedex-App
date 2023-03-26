@@ -1,4 +1,4 @@
-let pokemonList = [];
+/* let pokemonList = [];
 
 pokemonList[0]={
     name:'Bulbasaur',
@@ -14,7 +14,38 @@ pokemonList[2]={
     name:'Venusaur',
     height:20,
     types:['grass', 'poison']
-};
+}; */
+
+let pokemonRepository = (function() {
+    let pokemonList =[{
+        name:'Bulbasaur',
+        height:7,
+        types:['grass', 'poison']
+    },
+    {
+        name:'Charmander',
+        height:10,
+        types:['grass', 'poison']
+    },
+    {
+        name:'Venusaur',
+        height:20,
+        types:['grass', 'poison']
+    }];
+
+    function add(pokemon) {
+        pokemonList.push(pokemon);
+      }
+    
+    function getAll() {
+        return pokemonList;
+      }
+    
+    return {
+        add: add,
+        getAll: getAll
+      };
+})(); 
 
 /* for (let i = 0; i < pokemonList.length; i++) {
          if (pokemonList[i].height > 10) {
@@ -33,4 +64,5 @@ function myLoopFunction(alist){
 } 
 }
 
-pokemonList.forEach(myLoopFunction);
+pokemonRepository.getAll().forEach(myLoopFunction);
+
