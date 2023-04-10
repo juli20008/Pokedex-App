@@ -9,6 +9,29 @@
   <body>
     <h1>pokedex</h1>
     <ul class ="pokemon-list"></ul>
+    <div
+    id="modal-container"
+    class="modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modal-title"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        
+          <h5 class="modal-title"></h5>
+          <div id="button-container"></div>
+         </div>
+        <div class="modal-body">
+          <p class=" image-container"></p>
+          <p class="height"></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
     <script src="js/scripts.js"></script>
