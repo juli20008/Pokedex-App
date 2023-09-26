@@ -1,11 +1,21 @@
-# simple-js-app
+#Pokedex
 https://juli20008.github.io/simple-js-app/
 
-Pokédex App
-The Pokédex App is a mobile application that allows users to browse and search for information about different Pokémon species. The app includes data on over 150 Pokémon, including their types, abilities, moves, and evolution chains.
+Pokédex JS App
+Project Description:
+A web application using HTML, CSS and JavaScript that loads data from an external API and enables the viewing of data points in detail by displaying a list of pokemon as buttons, which when clicked will display a picture of the pokemon as well as information including: name, height, types and abilities within a modal.
 
-Features
-Search: Users can search for Pokémon by name, type, or other attributes.
-Browse: Users can browse a complete list of all Pokémon species.
-Details: Users can view detailed information on each Pokémon, including its stats, moves, and evolutionary history.
-Updates: The app is updated regularly to ensure that the information is accurate and up-to-date.
+Intructions:
+Simply visit the app here Make sure to try the search function.
+
+API
+Pokemon API
+
+Technologies
+HTML, CSS, JavaScript
+
+Libaries
+jQuery, Bootstrap
+
+Interface Examples
+How the display will look on a desktop:
