@@ -8,7 +8,7 @@ A web application using HTML, CSS and JavaScript that loads data from an externa
 
 ## Intructions: 
 
-Simply [visit the app here][(https://juli20008.github.io/Pokedex-App/)]
+Simply [visit the app here](https://juli20008.github.io/Pokedex-App/)
 Make sure to try the search function.
 
 ## API
