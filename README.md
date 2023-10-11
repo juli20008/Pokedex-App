@@ -2,7 +2,6 @@
 
 [https://juli20008.github.io/Pokedex-App/](https://juli20008.github.io/Pokedex-App/)
 
-![img1920](https://github.com/juli20008/Pokedex-App/blob/108af70e82883be6716ad1d96255cc94e3480aae/img/PokedexApp.PNG)
 ##  Project Description: 
 
 A web application using HTML, CSS and JavaScript that loads data from an external API and enables the viewing of data points in detail by displaying a list of pokemon as buttons, which when clicked will display a picture of the pokemon as well as information including: name, height, types and abilities within a modal.
@@ -28,8 +27,7 @@ jQuery, Bootstrap
 
 How the display will look on a desktop:
 
-![Desktop Interface](/Desktop-interface.png)
-
+![img1920](https://github.com/juli20008/Pokedex-App/blob/108af70e82883be6716ad1d96255cc94e3480aae/img/PokedexApp.PNG)
 
 ## Sources & Credits
 
