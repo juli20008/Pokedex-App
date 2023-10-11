@@ -1,6 +1,6 @@
 # Pokédex JS App 
 
-https://juli20008.github.io/simple-js-app/
+[https://juli20008.github.io/simple-js-app/](https://juli20008.github.io/Pokedex-App/)
 
 ##  Project Description: 
 
